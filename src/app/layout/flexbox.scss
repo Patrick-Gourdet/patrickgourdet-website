@@ -1,0 +1,18 @@
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.flex-container > div {
+  color: #8ec5fd;
+  padding: 20px;
+  width: 30px;
+  margin: 10px;
+  text-align: center;
+  font-size: 30px;
+  flex-direction: column;
+}
+.shad{
+  text-shadow: 1px 3px 0 #636d7c;
+}

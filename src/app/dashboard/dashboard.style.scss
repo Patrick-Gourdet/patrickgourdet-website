@@ -1,0 +1,92 @@
+@import "../scss/helpers";
+@import "../../../node_modules/nvd3/build/nv.d3";
+@import "../scss/helpers";
+
+/***********************************/
+/**            LANDING            **/
+/***********************************/
+
+.landing {
+  padding-bottom: 40px;
+  .page-header {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .navbar {
+    padding: 0;
+  }
+
+  .navbar-menu > li {
+    > a {
+      line-height: 40px;
+      padding: 0 10px;
+      width: auto;
+      font-size: $font-size-lg;
+    }
+  }
+
+  .navbar-buttons {
+    margin-right: 20px;
+
+    @include media-breakpoint-down(sm) {
+      margin-left: auto;
+    }
+    > li {
+      float: left;
+      > a {
+        margin: 7px 10px;
+      }
+    }
+  }
+}
+
+.logo{
+  position: static;
+  margin: 0;
+}
+
+.content{
+  padding: 25px 0;
+}
+
+.lead{
+  font-weight: normal;
+}
+
+.btn{
+  font-weight: normal;
+
+  + .btn{
+    margin-left: 10px;
+  }
+}
+.visits-info .row div {
+  padding: 0px;
+}
+
+.actions .btn {
+  font-size: 12px;
+  padding: 1px 5px;
+}
+
+.box {
+  border-radius: 3px;
+  padding: 5px;
+  text-align: center;
+  margin-bottom: 30px;
+  background: linear-gradient(127deg, #333333, #909090) ;
+  color: #f8f8f8;
+  box-shadow: 3px 3px #758391;
+  border: thin solid #ffffff !important;
+  strong{
+    font-size: 16px; padding-right: 10px;text-shadow: 3px 3px #5a6876;
+  }
+}
+
+.box:hover{
+  box-shadow: 0px 2px 6px 4px rgba(110, 211, 255, 0.4);cursor: pointer;
+}
+.btc { font-size:40px; color: #ffffff; padding-left: 10px;text-shadow: 4px 4px #5a6876;
+}
+.btc:hover { color: #c3d5de; }

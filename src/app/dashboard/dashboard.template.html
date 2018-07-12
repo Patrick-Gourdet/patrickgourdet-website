@@ -1,0 +1,103 @@
+
+
+<div class="container">
+  <h1 class="page-title">Crypto Currency Update <small>The wave of the future</small></h1>
+  <div class="widget-container" style="padding-top: 80px; ">
+    <div class="row">
+      <div class="col-md-3 col-sm-4 col-xs-4">
+        <div [@visibilityChanged]="visiblityState" class="box" (click)="itsClicked('ETH')">
+          <div class="icon">
+            <i class="cc ETH  btc"></i>
+          </div>
+          <div class="description">
+            <strong>ETH/USD</strong>
+            <i class="fa fa-dollar"
+               style="font-size: 14px;text-shadow: 1px 1px #5a6876"> {{ETH}}</i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-4 col-xs-4">
+        <div [@visibilityChanged]="visiblityState" class="box" (click)="itsClicked('BTC')">
+          <div class="icon">
+            <i class="cc BTC btc"></i>
+          </div>
+          <div class="description">
+            <strong>BTC/USD</strong>
+            <i class="fa fa-dollar"
+               style="font-size: 14px;text-shadow: 1px 1px #5a6876" >{{BTC}}</i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-4 col-xs-4">
+        <div [@visibilityChanged]="visiblityState" class="box"(click)="itsClicked('LTC')">
+          <div class="icon">
+            <i class="cc LTC btc"></i>
+          </div>
+          <div class="description">
+            <strong>LTC/USD</strong>
+            <i class="fa fa-dollar"
+               style="font-size: 14px;text-shadow: 1px 1px #5a6876">{{LTC}}</i>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-4 col-xs-4">
+        <div [@visibilityChanged]="visiblityState" class="box" (click)="itsClicked('XRP')">
+          <div class="icon">
+            <i class="cc XRP btc" ></i>
+          </div>
+          <div class="description">
+            <strong>XRP/USD</strong>
+            <i  class="fa fa-dollar"
+               style="font-size: 14px;text-shadow: 1px 1px #5a6876"> {{XRP}}</i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+<section widget class="widget">
+  <header>
+    <h4>
+      {{cryptoName}}
+      <small>
+       Cryptocurrency history
+      </small>
+    </h4>
+    <div class="widget-controls">
+      <a title="Options" href="#"><i class="glyphicon glyphicon-cog"></i></a>
+      <a data-widgster="expand" title="Expand" href="#"><i class="glyphicon glyphicon-chevron-up"></i></a>
+      <a data-widgster="collapse" title="Collapse" href="#"><i class="glyphicon glyphicon-chevron-down"></i></a>
+      <a data-widgster="close" title="Close" href="#"><i class="glyphicon glyphicon-remove"></i></a>
+    </div>
+  </header>
+  <div class="widget-body m-0">
+    <div *ngIf="chartData" nvd3-chart [chart]="nvd31Chart" [datum]="nvd31Data" #CHART>
+      <svg></svg>
+    </div>
+
+    <!--<div class="visits-info well well-sm">-->
+      <!--<div class="row">-->
+        <!--<div class="col-md-3 col-6">-->
+          <!--<div class="key"><i class="fa fa-users"></i> Total Traffic</div>-->
+          <!--<div class="value">24 541 <i class="fa fa-caret-up color-green"></i></div>-->
+        <!--</div>-->
+        <!--<div class="col-md-3 col-6">-->
+          <!--<div class="key"><i class="fa fa-bolt"></i> Unique Visits</div>-->
+          <!--<div class="value">14 778 <i class="fa fa-caret-down color-red"></i></div>-->
+        <!--</div>-->
+        <!--<div class="col-md-3 col-6">-->
+          <!--<div class="key"><i class="fa fa-plus-square"></i> Revenue</div>-->
+          <!--<div class="value">$3 583.18 <i class="fa fa-caret-up color-green"></i></div>-->
+        <!--</div>-->
+        <!--<div class="col-md-3 col-6">-->
+          <!--<div class="key"><i class="fa fa-user"></i> Total Sales</div>-->
+          <!--<div class="value">$59 871.12 <i class="fa fa-caret-down color-red"></i></div>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+  </div>
+</section>
+</div>

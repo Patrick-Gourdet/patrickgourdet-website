@@ -1,0 +1,24 @@
+import { Component, ViewEncapsulation } from '@angular/core';
+import { Router } from '@angular/router';
+
+import {HeaderComponent} from "../header/header.component"; [HeaderComponent]
+@Component({
+  selector: 'error',
+  styleUrls: [ './error.style.scss' ],
+  templateUrl: './error.template.html',
+  // encapsulation: ViewEncapsulation.None,
+  host: {
+    class: 'error-page container'
+  },
+})
+export class ErrorComponent {
+  router: Router;
+
+  constructor(router: Router) {
+    this.router = router;
+  }
+
+  searchResult(): void {
+    this.router.navigate(['/app', 'dashboard']);
+  }
+}

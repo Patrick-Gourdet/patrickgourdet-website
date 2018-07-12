@@ -1,0 +1,61 @@
+<!--<header class="page-header" style="text-decoration: none !important;">-->
+
+<!--<head>-->
+  <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"-->
+        <!--integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">-->
+
+  <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"-->
+          <!--integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"-->
+          <!--crossorigin="anonymous"></script>-->
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"-->
+          <!--integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"-->
+          <!--crossorigin="anonymous"></script>-->
+  <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"-->
+          <!--integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"-->
+          <!--crossorigin="anonymous"></script>-->
+<!--</head>-->
+<div class="navbar navbar-expand-lg  navbar-fixed-top navbar-light " style="background: rgba(25,34,50,0.3)">
+  <div class="container">
+    <!--<ul class="navbar-buttons"style="color: white !important;">-->
+    <!--<li >-->
+
+    <a style="padding-right: 10px" routerLink="/app/landing"> <img src="../../assets/tech_img/sourcerer_development.png">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!--</li>-->
+    <!--</ul navbar-menu hidden-sm-down ml-auto>-->
+    <div class="collapse navbar-collapse" id="navbarNav" style="font-size: 20px;">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+        true}">
+          <a class="nav-link" style="color: #adb5bd" routerLink="/app/landing">
+            <i class="fa fa-home"></i>
+            Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " style="color: #adb5bd" routerLink="/app/about">
+            <i class="fa fa-info"></i>
+            About
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: #adb5bd;float:none;" routerLink="/app/senior-project">
+            <i class="fa fa-sticky-note"></i>
+            Senior Project
+          </a>
+        </li>
+      <li class="nav-item">
+        <a class="nav-link" style="color: #adb5bd;float:none;" routerLink="/app/dashboard">
+          <i class="fa fa-bitcoin"></i>
+          Crypto Project
+        </a>
+      </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!--</header>-->

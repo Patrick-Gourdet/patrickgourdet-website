@@ -1,0 +1,66 @@
+<!--<app-header></app-header>-->
+<div class="container">
+  <header class="page-header">
+    <div class="navbar flex-row">
+      <div class="logo">
+        <h4><a href="index.html">My<strong>bc</strong></a><small>Wallet</small></h4>
+      </div>
+      <ul class="navbar-buttons">
+        <li>
+
+        </li>
+      </ul>
+      <ul class="nav navbar-nav flex-row navbar-menu hidden-sm-down ml-auto">
+        <li >
+          <a routerLink="/app/landing" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:
+        true}">
+            Home
+          </a>
+        </li>
+        <li>
+          <a [routerLink]="['/landing']" fragment="about" (click)="onAnchorClick()">
+            About
+          </a>
+        </li>
+        <li>
+          <a routerLink="/app/dashboard"
+             routerLinkActive="active"
+             class="btn btn-sm">
+            Dashboard
+            <i class="fa fa-calculator"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+</div>
+
+
+<main id="content" class="error-container" role="main">
+  <div class="row justify-content-center">
+    <div class="col-xl-4 col-md-6 col-10">
+      <div class="error-container">
+        <h1 class="error-code">404</h1>
+        <p class="error-info">
+          Opps, it seems that this page does not exist.
+        </p>
+        <p class="error-help mb">
+          If you are sure it should, search for it.
+        </p>
+        <form (ngSubmit)="searchResult()" method="get">
+          <div class="form-group">
+            <input class="form-control input-no-border" type="text" placeholder="Search Pages">
+          </div>
+          <button type="submit"  class="btn btn-transparent">
+            Search <i class="fa fa-search text-warning ml-xs"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="page-footer">
+  2016 &copy; Light Blue. Admin Dashboard Template.
+</footer>

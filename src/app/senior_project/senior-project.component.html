@@ -1,0 +1,572 @@
+<div class="container">
+  <div class="row" style="padding-top: 20px;">
+    <div class="col-xs-2">
+      <img class="img1" src="../../assets/tech_img/profpic.png" style="width:6em;
+      height:6em; border-radius: 25%;text-shadow: 2px 2px white; border-color: white !important;">
+    </div>
+    <div class="col-sm-8">
+      <h1>Patrick Gourdet CIS4919 SENIOR PROJECT
+      </h1>
+    </div>
+    <div class="col-sm-2  "><img style=" height: 35px; width: 100%;
+      -webkit-filter: drop-shadow(10px 0px 12px  rgba(255,255,255,0.8)); " src="../../assets/tech_img/uf.png">
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-12">
+      <p style="font-size: 20px">Welcome to my private page Senior Project. This is my last class before
+        I graduate from UF. I have decided to take on the task of understanding and
+        implementing Machine Learning algorithms to analyze the stock market</p>
+    </div>
+  </div>
+</div>
+<div class="container" style="text-align: center">
+  <div class="row">
+    <div class="col-12">
+      <h2><strong>TIME LINE</strong></h2>
+    </div>
+  </div>
+</div>
+<div class="backimg">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="timeline timelineFont">
+          <div class="container1 left">
+            <div class="content">
+              <h4>May 14th - June 4th 2018</h4>
+              <p>Determine the subject for the sentiment analysis and find relevant data to perform testing.
+                Find tools and libraries to use to acquire process and evaluate data
+              </p>
+              <ul style="list-style: circle; padding-left: 2em;">
+                <li>
+                  Used <a style="color: darkslateblue" href="https://www.octoparse.com/">Octoparse</a>
+                  to scrape The <a style="color: darkslateblue" href="https://www.wsj.com/">Wall Street Journal
+                  website</a>
+                  all news articles from 2010 - Present
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="container1 right">
+            <div class="content">
+              <h4>June 5th to 10th 2018</h4>
+              <p>Split Minimal Testing data to assure the normalizing and evaluation is successful.
+                Create website with time line code and outcomes. Use the small data set create and
+                use logistic regression for base line.Create classifier which returns the heist percentage of accuracy.
+              </p>
+            </div>
+          </div>
+          <div class="container1 left">
+            <div class="content">
+              <h4>June 10th to 25th 2018</h4>
+              <p>Meeting with mentor find out potential pivots. Review data to find potential normalization processes
+                to raise accuracy.
+              </p>
+            </div>
+          </div>
+          <div class="container1 right">
+            <div class="content">
+              <h4>June 25th to July 2nd 2018</h4>
+              <p>Start broadening the subject field to movie reviews, political orientation, technology likes and
+                dislikes.
+                Scrape data and clean said data to allow different models for different subjects.
+              </p>
+            </div>
+          </div>
+          <div class="container1 left">
+            <div class="content">
+              <h4>July 2nd to July 16th 2018</h4>
+              <p>Start writing final report. Start writing Final report. Refine methods debug and find potential bias.
+              </p>
+            </div>
+          </div>
+          <div class="container1 right">
+            <div class="content">
+              <h4>July 17th to Aug 5th 2018</h4>
+              <p>Automate the processes. Bring all materials together to finalize Final Report
+                Proof read and turn in final report. Hold final presentation
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div style="text-align: center !important;">
+  <div class="parallax">
+    <div class="container">
+      <div class="row" style="border: 20px solid transparent">
+        <div class="col-md-4">
+          <div class="circ">
+            <span style="font-size: 40px; padding-top: 14px" class="fa fa-bar-chart"></span>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h1 class="blo"><strong>METHODS</strong></h1>
+        </div>
+      </div>
+    </div>
+    <!--</div>-->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="blo"><u>Pre-Processing</u></h3>
+
+        </div>
+      </div>
+      <div class="row" style="text-align: left">
+        <div class="col-md-6">
+          <h3 class="blo"><u>Manual Pre-processing</u></h3>
+          <ul class="blo" style="list-style: circle;list-style-position: inside; font-size: 18px">
+            <li>
+              Rotate data to match dates of data to one another
+            </li>
+            <li>
+              Delete weekends and holidays from the news data set.
+            </li>
+            <li>
+              Calculate the difference between the opening and closing.
+            </li>
+            <li>
+              Separate test data set.
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h3 class="blo"><u>Code Implemented Pre-processing</u></h3>
+          <ul class="blo" style="list-style: circle;list-style-position: inside; font-size: 18px">
+            <li>
+              Read in data from csv file using ISO standard decoding.
+            </li>
+            <li>
+              Convert each cell to lower case.
+            </li>
+            <li>
+              Use NLTK to tokenize data and remove punctuations.
+            </li>
+            <li>
+              Remove all stop words.
+            </li>
+            <li>
+              Use NLTK to lemmatize data.
+            </li>
+            <li>
+              Use written unicode converter to convert unicode values.
+            </li>
+            <li>
+              For each cell the sentiment is extracted.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <!--<div class=" backimg2" >-->
+    <div class="container">
+      <div class="row" style="margin: 20px">
+        <div class="col-md-12">
+          <h2 class="blo"><strong>Visualizing The Data</strong></h2>
+          <h3 class="blo"><strong>June 5th to 10th 2018</strong></h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h3 class="blo">Box Plot</h3>
+          <h4 class="blo">Cumulative Mean</h4>
+          <img style="width: 80%;" src="../../assets/tech_img/box_plot.png" alt="Box Plot">
+          <figcaption style="padding: 20px; font-family: 'Times New Roman'">
+            <strong>Fig.1 - Box Plot of Sentiment values from raw data<br> Base Line </strong></figcaption>
+          <p class="blo" style="font-size: 16px;">
+            The mean for each news article sentiment is for each day is calculated.
+            The result shows 2 outliers and only a minimal amount of values in the
+            negative.
+            Using the current model a negative value stipulates the fall in the stock market. Thus we conclude that the data must
+            be normalized allowing us to use the middle value as the cutoff point between the rise or fall of the stock market.
+          </p>
+
+        </div>
+        <div class="col-md-6">
+          <h3 class="blo">Scatter Plot</h3>
+          <h4 class="blo">Y values are row indices</h4>
+          <img style="width: 80%;" src="../../assets/tech_img/scatter.png" alt="Scatter Plot">
+          <figcaption style="padding: 20px; font-family: 'Times New Roman'">
+            <strong>Fig.2 - Scatter Plot of Sentiment values from raw data<br> Base Line </strong></figcaption>
+          <p class="blo" style="font-size: 16px;">
+            The scatter plot shows that the data is clustered not allowing to differentiate between good or bad sentiment.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2 class="blo"><strong>Normalization</strong></h2>
+          <h3 class="blo"><strong>June 10th to 25th 2018</strong></h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h3 class="blo">Scatter Plot</h3>
+          <h4 class="blo">Y values are row indices</h4>
+          <img style="width: 80%;" src="../../assets/tech_img/boxplot_normalized.png" alt="Scatter Plot">
+          <figcaption style="padding: 20px; font-family: 'Times New Roman'">
+            <strong>Fig.3 - Box Plot of Sentiment values from Normalized data</strong></figcaption>
+          <p class="blo" style="font-size: 16px;">
+            The scatter plot shows that the data is clustered not allowing to differentiate between good or bad sentiment.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <h3 class="blo">Scatter Plot</h3>
+          <h4 class="blo">Y values are row indices</h4>
+          <img style="width: 80%;" src="../../assets/tech_img/afterNorm%20Scatter.png" alt="Scatter Plot">
+          <figcaption style="padding: 20px; font-family: 'Times New Roman'">
+            <strong>Fig.4 - Scatter Plot of Sentiment values from Normalized data</strong></figcaption>
+          <p class="blo" style="font-size: 16px;">
+            The scatter plot shows that the data is clustered not allowing to differentiate between good or bad sentiment.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-12">
+        <h3><u>Base Line</u></h3>
+
+      </div>
+    </div>
+    <div class="row" style="text-align: left">
+      <div class="col-md-12">
+        <h2>Logistic Regression</h2>
+        <div style="border: solid #bbc7d8;text-align: center;">
+          <div style="padding: 10px">
+            <img alt="" style="-webkit-filter: drop-shadow(5px 5px 20px  rgba(255,255,255,3));
+      " src="../../assets/tech_img/logisticregression.svg">
+          </div>
+          <div style="text-align: left; padding-left: 20px;font-size: 15px">
+            <p>Logistic Regression gave on average 44 to 55 percent prediction accuracy. This gives us a great baseline
+              to start working from.
+              Thus we are able to see if the alterations we implement in the model give us a better result.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Gaussian naive Bayes</h2>
+        <div style="border: solid #bbc7d8">
+          <div style="padding: 10px"><img alt="" style="-webkit-filter: drop-shadow(5px 5px 20px  rgba(255,255,255,3));
+      " src="../../assets/tech_img/gaussian.svg"></div>
+          <div style="text-align: left; padding-left: 20px;font-size: 15px">
+            <p>Gaussian naive Bayes gave on average 55 percent prediction accuracy. In comparison to our base line a
+              slightly better result.
+              Although a slight raise in accuracy to our baseline we see that the preprocessing and normalization
+              process needs,
+              to be refined and re-run.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h2>Bernoulli naive Bayes</h2>
+        <div style="border: solid #bbc7d8">
+          <div style="padding: 10px"><img alt="" style="-webkit-filter: drop-shadow(5px 5px 20px  rgba(255,255,255,3));
+      " src="../../assets/tech_img/bernulli.svg"></div>
+          <div style="text-align: left; padding-left: 20px;font-size: 15px">
+            <p>Bernoulli naive Bayes gave on average 53 percent prediction accuracy. The process also shows a slight
+              improvement
+              to logistic regression, the improvement is not of significance.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h2>After Nomalization of Test data set</h2>
+        <div style="border: solid #bbc7d8;text-align: left; padding-left: 20px;font-size: 15px">
+          <p>After normalizing the data with the folowing code segment, minX, maxX = Y.min(),Y.max()
+            Y = (Y - minX)/(maxX - minX). Where A = min, B = max, a = 0, b = 1 respectively. Then applying the
+          standard formula a+(X - A) * (b-a) / (B - A) to each X in the data respectively. Then running the model I was
+          able to receive a accuracy of up to 80 percent, where the worst performing fit was still logistic regression which
+          was expected</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <h2>Conclusion of failure when using Normalized Large data set</h2>
+        <div style="border: solid #bbc7d8;text-align: left; padding-left: 20px;font-size: 15px">
+          <p>My prior approch to use the raw sentiment does not allow for enough variation within the values to extrapolate
+          a proper 2 class differentiation. Thus the next step is to use either neural network witch would eliminate to find
+          features all together or use the a different data set of non-business news to find proper features to then
+          calculate the sentiment. I will implement both and see which one yields the better result.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<div class="backimg1">
+  <div class="container" style="text-align: center;padding-top: 20px ">
+    <div class="row">
+      <div class="col-12">
+        <h2><strong>RESULTS</strong></h2>
+      </div>
+    </div>
+  </div>
+  <div class="container" style="padding-top: 20px;padding-bottom: 20px">
+    <p>
+      <samp>
+        C:\Users\SeniorProject>
+        <br> Y = [1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1,
+        1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0,
+        1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0,
+        0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1,
+        0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1,
+        1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0,
+        0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1]
+        <br>(209, 158) (1, 158)
+        <br>Gaussian Naive Bayes
+        <br>Train Score: 0.8785714285714286
+        <br>Test Score:0.5714285714285714
+        <br>Bernoulli Naive Bayes
+        <br>Train Score: 0.8285714285714286
+        <br>Test Score: 0.5428571428571428
+        <br>Logistic Regression
+        <br>Train Score: 1.0
+        <br>Test Score: 0.5571428571428572
+      </samp></p>
+    <figcaption style="padding: 20px; font-family: 'Times New Roman'">
+      <strong>Fig.5 - Results Base line</strong></figcaption>
+  </div>
+  <div class="container" style="text-align: center;padding-top: 20px ">
+    <div class="row">
+      <div class="col-12">
+        <h2><strong>RESULTS AFTER NORMALIZATION July 17th to Aug 5th 2018</strong></h2>
+      </div>
+    </div>
+  </div>
+  <div class="container" style="padding-top: 20px;padding-bottom: 20px">
+    <p>
+      <samp>
+        C:\Users\SeniorProject>
+        <br>(209, 158) (1, 158)
+        <br>Gaussian Naive Bayes
+        <br>Train Score:  0.9285714285714286
+        <br>Test Score:  0.8285714285714286
+        <br>Bernoulli Naive Bayes
+        <br>Train Score:  0.9285714285714286
+        <br>Test Score:  0.8571428571428571
+        <br>Logistic Regression
+        <br>Train Score: 1.0
+        <br>Test Score:  0.8142857142857143
+      </samp></p>
+    <figcaption style="padding: 20px; font-family: 'Times New Roman'">
+      <strong>Fig.6 - Results ater normalization</strong></figcaption>
+  </div>
+  <div class="container" style="text-align: center;padding-top: 20px ">
+    <div class="row">
+      <div class="col-12">
+        <h2><strong>RESULTS AFTER NORMALIZATION LARGE DATA SET July 17th to Aug 5th 2018</strong></h2>
+      </div>
+    </div>
+  </div>
+  <div class="container" style="padding-top: 20px;padding-bottom: 20px">
+    <p>
+      <samp>
+        C:\Users\SeniorProject>
+        <br>(396, 158)   (397,)
+        <br>Gaussien Naive Bayes
+        <br>Train Score:  0.8113207547169812
+        <br>Test Score:  0.5454545454545454
+        <br>Bernoulli Naive Bayes
+        <br>Train Score:  0.6566037735849056
+        <br>Test Score:  0.5757575757575758
+        <br>Logistic Regression
+        <br>Train Score:  1.0
+        <br>Test Score:  0.5227272727272727
+      </samp></p>
+    <figcaption style="padding: 20px; font-family: 'Times New Roman'">
+      <strong>Fig.7 - Results normalized large data set</strong></figcaption>
+  </div>
+  <div class="container" style="text-align: center;padding-top: 20px ">
+    <div class="row">
+      <div class="col-12">
+        <h2><strong>RESULTS AFTER NORMALIZATION LARGE DATA SET USING MAJOR INDEX July 17th to Aug 5th 2018</strong></h2>
+      </div>
+    </div>
+  </div>
+  <div class="container" style="padding-top: 20px;padding-bottom: 20px">
+    <p>
+      <samp>
+        C:\Users\SeniorProject>
+       <br> (395, 158)   (396,)
+        <br> Gaussien Naive Bayes
+        <br>Train Score:  0.8415094339622642
+        <br>Test Score:  0.6870229007633588
+        <br> Bernoulli Naive Bayes
+        <br>Train Score:  0.6792452830188679
+        <br> Test Score:  0.7938931297709924
+        <br> Logistic Regression
+        <br> Train Score:  1.0
+        <br> Test Score:  0.6412213740458015
+      </samp></p>
+    <figcaption style="padding: 20px; font-family: 'Times New Roman'">
+      <strong>Fig.8 - Results normalized large data set NASDAQ</strong></figcaption>
+  </div>
+</div>
+<div class="container" style="text-align: center;padding-top: 20px ">
+  <div class="row">
+    <div class="col-12">
+      <h2><strong>CODE IMPLEMENTATION</strong></h2>
+    </div>
+  </div>
+</div>
+<div class="container" style="padding-top: 20px;padding-bottom: 20px;font-family: 'Helvetica Neue', sans-serif">
+  <div class="samp1">
+    <span class="import">import</span> nltk
+    <br><span class="import">import</span> numpy as np
+    <br><span class="import">from</span> nltk.stem <span class="import">import</span> WordNetLemmatizer
+    <br><span class="import">from</span> nltk.corpus <span class="import">import</span> stopwords
+    <br><span class="import">from</span> sklearn.linear_model <span class="import">import</span> LogisticRegression
+    <br><span class="import">from</span> sklearn.feature_extraction.text <span class="import">import</span>
+    TfidfVectorizer, CountVectorizer
+    <br><span class="import">from</span> sklearn.model_selection <span class="import">import</span> train_test_split,
+    cross_val_score
+    <br><span class="import">from</span> sklearn.svm <span class="import">import</span> SVC
+    <br><span class="import">from</span> sklearn.naive_bayes <span class="import">import</span> MultinomialNB,
+    GaussianNB, BernoulliNB
+    <br><span class="import">import</span> pandas as pan
+    <br><span class="import">from</span> sklearn.utils <span class="import">import</span> shuffle
+    <br><span class="import">from</span> sklearn <span class="import">import</span> linear_model
+    <br><span class="import">import</span> matplotlib.pyplot as plt
+    <br><span class="import">from</span> sklearn.preprocessing <span class="import">import</span> Imputer
+    <br><span class="import">import</span> csv
+    <br><span class="import">from</span> textblob <span class="import">import</span> TextBlob
+    <br>wordnet_lemmatizer = WordNetLemmatizer()
+    <br><span class="keyword">def</span> unicodetoascii(text):
+    <div style="padding-left: 4em">
+      <br>TEXT = (text.
+      <br>replace('\\xe2\\x80\\x99', "'").
+      replace('\\xc3\\xa9', 'e').
+      replace('\\xe2\\x80\\x90', '-').
+      <br>replace('\\xe2\\x80\\x91', '-').
+      replace('\\xe2\\x80\\x92', '-').
+      replace('\\xe2\\x80\\x93', '-').
+      <br>replace('\\xe2\\x80\\x94', '-').
+      replace('\\xe2\\x80\\x94', '-').
+      replace('\\xe2\\x80\\x98', "'").
+      <br>replace('\\xe2\\x80\\x9b', "'").
+      replace('\\xe2\\x80\\x9c', '"').
+      replace('\\xe2\\x80\\x9c', '"').
+      <br>replace('\\xe2\\x80\\x9d', '"').
+      <br>replace('\\xe2\\x80\\x9e', '"').
+      replace('\\xe2\\x80\\x9f', '"').
+      replace('\\xe2\\x80\\xa6', '...').
+      <br>replace('\\xe2\\x80\\xb2', "'").
+      replace('\\xe2\\x80\\xb3', "'").
+      replace('\\xe2\\x80\\xb4', "'").
+      <br>replace('\\xe2\\x80\\xb5', "'").
+      replace('\\xe2\\x80\\xb6', "'").
+      replace('\\xe2\\x80\\xb7', "'").
+      <br>replace('\\xe2\\x81\\xba', "+").
+      <br>replace('\\xe2\\x81\\xbb', "-").
+      replace('\\xe2\\x81\\xbc', "=").
+      replace('\\xe2\\x81\\xbd', "(").
+      <br>replace('\\xe2\\x81\\xbe', ")").
+      replace('\\xe3\\x81\\x8b', "_").
+      replace('u\\u304b', "_")
+    </div>
+    <br>)
+    <br>return TEXT
+    <br><span class="keyword">def</span> cleanData(data):
+    <br>data = data.lower()
+    <br>token = nltk.tokenize.wordpunct_tokenize(data)
+    <br>token = [i for i in token if i not in stop]
+    <br>token = [wordnet_lemmatizer.lemmatize(s) for s in token]
+    <br> token = [unicodetoascii(t) for t in token ]
+    <br>return token
+
+
+    <br>tfid = TfidfVectorizer(decode_error='ignore')
+    <br>stop = stopwords.words('english')
+    <br>data = pan.read_csv('TestDataS.csv',encoding='ISO-8859-1',header=None) #has in valid characters
+    <br>np.set_printoptions(threshold=np.inf)
+    <br>imp = Imputer(missing_values='NaN', strategy='mean', axis=0)
+
+    <br>print(data.isna)
+    <br><span style="color:green"># stop.append("?")</span>
+    <br><span style="color:green"># print(data)</span>
+    <br>a,b = data.shape
+    <br>dataMatrix = np.zeros((b,a))
+
+    <br>data = shuffle(data)
+    <br>Y = data[data.columns[-1]]
+    <br>print(Y)
+    <br>index = 0
+    <br><span class="keyword">for</span> col <span class="keyword">in</span> data.columns:
+    <br><span style="color:green"># tokens = cleanData(str(col))</span>
+    <br><span style="color:green"># print(k)</span>
+    <br>index = 0
+    <br><span class="keyword">for</span> c,i <span class="keyword">in</span> data[col].iteritems():
+    <br><span style="color:green"># print(i)</span>
+    <br>j = TextBlob(" ".join(cleanData(str(i))))
+    <br><span style="color:green"># j = TextBlob(str(i))</span>
+    <br>dataMatrix[col,index] = j.sentiment.polarity
+    <br><span style="color:green"># = join(cleanData(i))</span>
+    <br><span style="color:green"># = j.sentiment.polarity</span>
+    <br> index +=1
+
+
+    <br>print(dataMatrix.mean(axis=0))
+    <br><span style="color:green"># plt.plot(dataMatrix.mean(axis=0))</span>
+    <br>plt.boxplot(dataMatrix.mean(axis=0))
+    <br>d = np.zeros((b,a))
+    <br>imp.fit(dataMatrix)
+    <br>imp.transform(dataMatrix)
+    <br>d = dataMatrix.T
+    <br>
+    <br>Y1=[]
+    <br><span class="keyword">for</span> t <span class="keyword">in</span> Y:
+    <br><span style="color:green"># print(t)</span>
+    <br><span class="keyword">if</span> t > 0:
+    <br>Y1.append(0)
+    <br><span class="keyword">else</span>:
+    <br>Y1.append(1)
+    <br>
+    <br><span class="print">print</span>(Y1)
+    <br> X = d[:,:-1]
+    <br>
+    <br>Y1 = np.array(Y1)
+    <br><span class="print">print</span>(X[1:].shape," ",X[-1:].shape)
+    <br>X_train, X_test, Y_train, Y_test = train_test_split(X, Y1, test_size=0.33, random_state=33)
+    <br>m = GaussianNB()
+    <br>m.fit(X_train,Y_train)
+    <br><span class="print">print</span>("Gaussien Naive Bayes")
+    <br><span class="print">print</span>("Train Score: ", m.score(X_train,Y_train))
+    <br><span class="print">print</span>("Test Score: ", m.score(X_test,Y_test))
+    <br>m1 = BernoulliNB()
+    <br>m1.fit(X_train,Y_train)
+    <br><span class="print">print</span>("Bernoulli Naive Bayes")
+    <br><span class="print">print</span>("Train Score: ", m1.score(X_train,Y_train))
+    <br><span class="print">print</span>("Test Score: ", m1.score(X_test,Y_test))
+    <br>logreg = linear_model.LogisticRegression(C=1e5)
+    <br>logreg.fit(X_train,Y_train)
+    <br><span class="print">print</span>("Logistic Regression")
+    <br><span class="print">print</span>("Train Score: ", logreg.score(X_train,Y_train))
+    <br><span class="print">print</span>("Test Score: ", logreg.score(X_test,Y_test))
+    <br>plt.show()
+  </div>
+  <figcaption style="padding: 20px; font-family: 'Times New Roman'">
+    <strong>Fig.8 - Code base line</strong></figcaption>
+</div>
